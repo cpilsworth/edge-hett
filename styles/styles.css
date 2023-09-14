@@ -14,15 +14,16 @@
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
-  --background-color: #fff;
+  --background-color: #f0f4f5;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
   --text-color: #000;
+  --header-background-color: #005eb8;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  --body-font-family: Frutiger W01,Arial,Sans-serif;
   --heading-font-family: var(--body-font-family);
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  --fixed-font-family:  menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -43,12 +44,18 @@
 }
 
 @font-face {
-  font-family: roboto-fallback;
-  size-adjust: 100.06%;
-  ascent-override: 95%;
-  src: local('Arial');
+  font-family: "Frutiger W01";
+  font-weight: 400;
+  src: url('/fonts/FrutigerLTW01-55Roman.woff2');
 }
 
+@font-face {
+  font-family: "Frutiger W01";
+  font-weight: 600;
+  font-style: normal;
+  font-display: "swap";
+  src: url('/fonts/FrutigerLTW01-65Roman.woff2');
+}
 
 @media (min-width: 900px) {
   :root {
@@ -240,7 +247,7 @@ main .section {
 
 @media (min-width: 900px) {
   .section > div {
-    max-width: 1200px;
+    max-width: 960px;
     margin: auto;
   }
 }
