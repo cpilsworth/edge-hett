@@ -2,11 +2,24 @@ footer {
   padding: 2rem;
   background-color: var(--overlay-background-color);
   font-size: var(--body-font-size-s);
+  border-top: 4px solid #005eb8;
+  background-color: #d8dde0;
 }
 
 footer .footer {
   max-width: 1200px;
   margin: auto;
+}
+
+footer .footer > div > div {
+  display: flex;
+  justify-content: space-between;
+
+  & ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 footer .footer p {
